@@ -1,0 +1,21 @@
+.register-sec{
+    form{
+        .info{
+            text-align: start;
+            margin-bottom: 30px;
+            .txt{
+                color: var(--sec-color);
+                font-size: 18px;
+                margin-left: 10px;
+            }
+
+            img{
+                cursor: pointer;
+                width: 160px;
+                box-shadow: 3px 3px 5px -7px #cfc8c8,
+                    -3px -3px 5px -7px #cfc8c8;
+                border-radius: 8px;
+            }
+        }
+    }
+}

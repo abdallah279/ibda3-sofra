@@ -1,0 +1,140 @@
+.account-sec{
+    background-color: #fff;
+    padding: 50px 0;
+
+    .content{
+        background: linear-gradient(to bottom, #f71059, #af335a);
+        // position: relative;
+        box-shadow: 3px 3px 12px -7px #cfc8c8,
+                    -3px -3px 12px -7px #cfc8c8;
+        padding: 30px 40px;
+        border-radius: 15px;
+        margin-left: 200px;
+        margin-right: 200px;
+
+        .icon-co{
+            text-align: center;
+            margin-bottom: 20px;
+
+            .icon{
+                background-color: #fff;
+                width: 80px;
+                height: 80px;
+                margin: auto;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i{
+                    font-size: 40px;
+                    color: var(--sec-color);
+                }
+            }
+        }
+
+        form{
+            padding: 0 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+
+            .form-control, textarea{
+                margin-bottom: 20px;
+                background-color: #fff;
+                padding: 13px 20px;
+                border: none;
+                font-size: 18px;
+                outline: none;
+                
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+
+            ::placeholder{
+                opacity: 1;
+                color: #999;
+            }
+            
+            .form-control{
+                border-radius: 35px;
+            }
+
+            textarea{
+                width: 100%;
+                border-radius: 15px;
+                resize: none;
+            }
+
+            .button{
+                background: var(--sec-color);
+                width: 220px;
+                padding: 10px 0;
+                display: block;
+                color: #fff;
+                border-radius: 30px;
+                margin: auto;
+                font-size: 19px;
+                border: none;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                &:hover{
+                    background-color: #3d0a66;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:991px) {
+    .account-sec{
+
+        .content{
+            padding: 60px 20px;
+            margin-left: 40px;
+            margin-right: 40px;
+
+          form{
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .account-sec{
+
+        .content{
+            padding: 30px 20px;
+            margin-left: 8px;
+            margin-right: 8px;
+
+            form{
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .account-sec{
+
+        .content{
+            margin-left: 0px;
+            margin-right: 0px;
+
+            form{
+                .button{
+                    background: var(--sec-color);
+                    width: 180px;
+                    padding: 10px 0;
+                    border-radius: 30px;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

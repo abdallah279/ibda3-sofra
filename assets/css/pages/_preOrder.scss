@@ -1,0 +1,40 @@
+.pre-order{
+    .boxs{
+        .box{
+            .content{
+                .info{
+                    p{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .pre-order{
+        .boxs{
+            .box{
+                justify-content: space-between;
+
+                .img{
+                    margin: 0;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .pre-order{
+        .boxs{
+            .box{
+                .img{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
