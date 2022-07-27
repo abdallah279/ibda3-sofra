@@ -1,5 +1,67 @@
 .add-offer{
     .content{
         background-color: #eeeeee18;
+
+        form{
+            .date-co{
+                display: flex;
+                margin: 30px 0;
+                justify-content: center;
+
+                .date{
+                    margin-left: 10px;
+                    position: relative;
+                    
+                    input{
+                        background-color: #eee;
+                        padding: 8px 20px;
+                        border: none;
+                        outline: none;
+                        border-radius: 8px;
+                    }
+
+                    i{
+                        position: absolute;
+                        left: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 24px;
+                        cursor: pointer;
+                        color: var(--sec-color);
+                    }
+
+
+                    &:last-of-type{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:570px) {
+    .add-offer{
+        .content{
+            form{
+                .date-co{
+                    flex-direction: column;
+
+                    .date{
+                        margin-left: 0;
+                        margin-bottom: 10px;
+                        // width: 100%;
+
+                        input{
+                            width: 100%;
+                        }
+
+                        &:last-of-type{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
